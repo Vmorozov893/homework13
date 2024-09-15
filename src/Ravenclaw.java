@@ -23,18 +23,18 @@ public class Ravenclaw extends Hogwarts {
                 ", расстояние трансгрессии = " + transgressionDistance;
     }
 
-    public void print(Ravenclaw ravenclaw) {
-        System.out.println(ravenclaw.toString());
+    public void print() {
+        System.out.println(this.toString());
     }
 
-    public int studentStrength() {
+    public int studentRavenclawStrength() {
         int sum = this.smart + this.wisdom + this.wit + this.creation;
         return sum;
     }
 
-    public void equals(Ravenclaw ravenclaw) {
-        int sum1 = this.studentStrength();
-        int sum2 = ravenclaw.studentStrength();
+    public void equalsRavenclaw(Ravenclaw ravenclaw) {
+        int sum1 = this.studentRavenclawStrength();
+        int sum2 = ravenclaw.studentRavenclawStrength();
         if (sum1 > sum2) {
             System.out.println(this.name + " лучший Когтевранец, чем " + ravenclaw.name);
         } else if (sum1 < sum2) {

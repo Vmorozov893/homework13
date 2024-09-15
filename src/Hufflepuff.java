@@ -20,21 +20,22 @@ public class Hufflepuff extends Hogwarts {
                 ", расстояние трансгрессии = " + transgressionDistance;
     }
 
-    public void print(Hufflepuff hufflepuff) {
-        System.out.println(hufflepuff.toString());
+    public void printHufflepuff() {
+        System.out.println(this.toString());
     }
-    public int studentStrength() {
+
+    public int studentHufflepuffStrength() {
         int sum = this.hardWork + this.loyalty + this.honesty;
         return sum;
     }
 
-    public void equals(Hufflepuff hufflepuff) {
-        int sum1 = this.studentStrength();
-        int sum2 = hufflepuff.studentStrength();
+    public void equalsHufflepuff(Hufflepuff hufflepuff) {
+        int sum1 = this.studentHufflepuffStrength();
+        int sum2 = hufflepuff.studentHufflepuffStrength();
         if (sum1 > sum2) {
             System.out.println(this.name + " лучший Пуффендуец, чем " + hufflepuff.name);
         } else if (sum1 < sum2) {
-            System.out.println( hufflepuff.name + " лучший Пуффендуец, чем " + this.name);
+            System.out.println(hufflepuff.name + " лучший Пуффендуец, чем " + this.name);
         } else {
             System.out.println(this.name + " и " + hufflepuff.name + "одинаково хорошие Пуффендуйцы!");
         }

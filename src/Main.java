@@ -1,8 +1,11 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+    public static void separator(){
+        System.out.println("==================");
+    }
     public static void main(String[] args) {
-        Gryffindor harryPoter =new Gryffindor("Гарри","Потер",80,70,66,12,54);
+        Gryffindor harryPoter =new Gryffindor("Гарри","Потер",80,70,66,34,51);
         Gryffindor hermioneGranger=new Gryffindor("Гермиона","Грейнджер",71,90,26,25,19);
         Gryffindor ronWeasley=new Gryffindor("Рон","Уизли",15,35,86,71,37);
         Hufflepuff zachariahSmith= new Hufflepuff("Захария", "Смит", 16,56,26,36,15);
@@ -15,7 +18,16 @@ public class Main {
         Slytherin grahamMontague = new Slytherin("Грэхэм","Монтегю",34,27,54,72,68,35,13);
         Slytherin gregoryGoyle = new Slytherin("Грегори","Гойл",36,5,25,82,35,36,39);
 
-        harryPoter.print();
-        hermioneGranger.equals(ronWeasley);
+
+        separator();
+        padmaPatil.printHogwarts();
+        separator();
+        harryPoter.printGryffindor();
+        separator();
+        hermioneGranger.equalsGryffindor(ronWeasley);
+        separator();
+        dracoMalfoy.equalsHogwarts(harryPoter);
+        separator();
+
     }
 }

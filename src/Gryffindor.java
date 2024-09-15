@@ -20,18 +20,18 @@ public class Gryffindor extends Hogwarts {
                 ", расстояние трансгрессии = " + transgressionDistance;
     }
 
-    public void print() {
+    public void printGryffindor() {
         System.out.println(this.toString());
     }
 
-    public int studentStrength() {
+    public int studentGryffindorStrength() {
         int sum = this.nobility + this.honor + this.bravery;
         return sum;
     }
 
-    public void equals(Gryffindor gryffindor) {
-        int sum1 = this.studentStrength();
-        int sum2 = gryffindor.studentStrength();
+    public void equalsGryffindor(Gryffindor gryffindor) {
+        int sum1 = this.studentGryffindorStrength();
+        int sum2 = gryffindor.studentGryffindorStrength();
         if (sum1 > sum2) {
             System.out.println(this.name + " лучший Гриффиндорец, чем " + gryffindor.name);
         } else if (sum1 < sum2) {

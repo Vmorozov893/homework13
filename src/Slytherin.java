@@ -26,18 +26,18 @@ public class Slytherin extends Hogwarts {
                 ", расстояние трансгрессии = " + transgressionDistance;
     }
 
-    public void print(Slytherin slytherin) {
-        System.out.println(slytherin.toString());
+    public void printSlytherin() {
+        System.out.println(this.toString());
     }
 
-    public int studentStrength() {
-        int sum = this.cunning + this.determination + this.ambition + this.resourcefulness +this.lustForPower;
+    public int studentSlytherinStrength() {
+        int sum = this.cunning + this.determination + this.ambition + this.resourcefulness + this.lustForPower;
         return sum;
     }
 
-    public void equals(Slytherin slytherin) {
-        int sum1 = this.studentStrength();
-        int sum2 = slytherin.studentStrength();
+    public void equalsSlytherin(Slytherin slytherin) {
+        int sum1 = this.studentSlytherinStrength();
+        int sum2 = slytherin.studentSlytherinStrength();
         if (sum1 > sum2) {
             System.out.println(this.name + " лучший Слизеринец, чем " + slytherin.name);
         } else if (sum1 < sum2) {
