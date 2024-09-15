@@ -16,5 +16,6 @@ public class Main {
         Slytherin gregoryGoyle = new Slytherin("Грегори","Гойл",36,5,25,82,35,36,39);
 
         harryPoter.print();
+        hermioneGranger.equals(ronWeasley);
     }
 }

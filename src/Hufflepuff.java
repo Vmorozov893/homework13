@@ -23,4 +23,32 @@ public class Hufflepuff extends Hogwarts {
     public void print(Hufflepuff hufflepuff) {
         System.out.println(hufflepuff.toString());
     }
+    public int studentStrength() {
+        int sum = this.hardWork + this.loyalty + this.honesty;
+        return sum;
+    }
+
+    public void equals(Hufflepuff hufflepuff) {
+        int sum1 = this.studentStrength();
+        int sum2 = hufflepuff.studentStrength();
+        if (sum1 > sum2) {
+            System.out.println(this.name + " лучший Пуффендуец, чем " + hufflepuff.name);
+        } else if (sum1 < sum2) {
+            System.out.println( hufflepuff.name + " лучший Пуффендуец, чем " + this.name);
+        } else {
+            System.out.println(this.name + " и " + hufflepuff.name + "одинаково хорошие Пуффендуйцы!");
+        }
+    }
+
+    public int getHardWork() {
+        return hardWork;
+    }
+
+    public int getLoyalty() {
+        return loyalty;
+    }
+
+    public int getHonesty() {
+        return honesty;
+    }
 }
