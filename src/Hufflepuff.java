@@ -12,14 +12,15 @@ public class Hufflepuff extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Студент Пуффендуя-" + name + surname + ": " +
+        return "Студент Пуффендуя-" + name + ' ' + surname + ": " +
                 "трудолюбие = " + hardWork +
                 ", верность = " + loyalty +
                 ", честность = " + honesty +
                 ", сила магии = " + powerOfMagic +
                 ", расстояние трансгрессии = " + transgressionDistance;
     }
-    public void print(Hufflepuff hufflepuff){
+
+    public void print(Hufflepuff hufflepuff) {
         System.out.println(hufflepuff.toString());
     }
 }

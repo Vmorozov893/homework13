@@ -16,7 +16,7 @@ public class Slytherin extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Студент Слизерина-" + name + surname + ": " +
+        return "Студент Слизерина-" + name + ' ' + surname + ": " +
                 "хитрость = " + cunning +
                 ", решительность = " + determination +
                 ", амбициозность = " + ambition +
@@ -25,7 +25,8 @@ public class Slytherin extends Hogwarts {
                 ", сила магии = " + powerOfMagic +
                 ", расстояние трансгрессии = " + transgressionDistance;
     }
-    public void print(Slytherin slytherin){
+
+    public void print(Slytherin slytherin) {
         System.out.println(slytherin.toString());
     }
 

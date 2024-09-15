@@ -14,7 +14,7 @@ public class Ravenclaw extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Студент Когтеврана-" + name + surname + ": " +
+        return "Студент Когтеврана-" + name + ' ' + surname + ": " +
                 "ум = " + smart +
                 ", мудрость = " + wisdom +
                 ", остроумие = " + wit +
@@ -23,7 +23,7 @@ public class Ravenclaw extends Hogwarts {
                 ", расстояние трансгрессии = " + transgressionDistance;
     }
 
-    public void print(Ravenclaw ravenclaw){
+    public void print(Ravenclaw ravenclaw) {
         System.out.println(ravenclaw.toString());
     }
 

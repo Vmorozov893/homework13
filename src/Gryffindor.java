@@ -12,15 +12,16 @@ public class Gryffindor extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Студент Гриффиндора-" + name + surname + ": " +
+        return "Студент Гриффиндора-" + name + ' ' + surname + ": " +
                 "благородство = " + nobility +
                 ", честь = " + honor +
                 ", храбрость = " + bravery +
                 ", сила магии = " + powerOfMagic +
                 ", расстояние трансгрессии = " + transgressionDistance;
     }
-    public void print(Gryffindor gryffindor){
-        System.out.println(gryffindor.toString());
+
+    public void print() {
+        System.out.println(this.toString());
     }
 
 }
